@@ -18,8 +18,7 @@ export default class Component {
       set: (target, key, value) => {
         if (target[key] === value) return true;
         target[key] = value;
-        this.mount();
-        this.setup();
+        this.mount().setup();
         return true;
       },
     };
@@ -31,8 +30,7 @@ export default class Component {
       set: (target, key, value) => {
         if (target[key] === value) return true;
         target[key] = value;
-        this.mount();
-        this.setup();
+        this.mount().setup();
         return true;
       }
     };
@@ -78,8 +76,7 @@ export default class Component {
             component.deepProxyHandler,
           );
         });
-        component.mount();
-        component.setup();
+        component.mount().setup();
         return component;
       });
     });

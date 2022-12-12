@@ -1,6 +1,6 @@
 {
   "name": "dynaticjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple reactive runtime JS framework inspired by Vue",
   "main": "index.js",
   "type": "module",
